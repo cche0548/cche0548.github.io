@@ -1,71 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Psychography of Christian Cheng</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Psychography of Christian Cheng</title>
+	<link rel="stylesheet" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./index.js"></script>
+	<!-- Include GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+	<!-- <script>
+	  document.addEventListener("DOMContentLoaded", function () {
+	    gsap.from("#main_header", {
+	      scale: 0,
+	      opacity: 0,
+	      duration: 4,
+	      ease: "elastic.out(1, 0.5)"
+	    });
+	  });
+	</script> -->
+
   </head>
   <body>
-    <script src="index.js"></script>
-    <header>
-      <div>
-        <h1>Stacking Cards Animation</h1>
-        <p>Scroll down to stack the cards. Scroll back up to unstack them.</p>
-      </div>
-    </header>
-    <main>
-      <ul id="cards">
-        <li class="card" id="card-1">
-          <div class="card-content">
-            <div>
-              <h2>Card One</h2>
-              <p>This is the content of card one. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <figure>
-              <img src="https://assets.codepen.io/210284/flower-9.jpg" alt="card-one">
-            </figure>
-          </div>
-        </li>
-  
-        <li class="card" id="card-2">
-          <div class="card-content">
-            <div>
-              <h2>Card Two</h2>
-              <p>This is the content of card two. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <figure>
-              <img src="https://assets.codepen.io/210284/flower-8.jpg" alt="card two">
-            </figure>
-          </div>
-        </li>
-  
-        <li class="card" id="card-3">
-          <div class="card-content">
-            <div>
-              <h2>Card Three</h2>
-              <p>This is the content of card three. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <figure>
-              <img src="https://assets.codepen.io/210284/flower-7.jpg" alt="card three">
-            </figure>
-          </div>
-        </li>
-  
-        <li class="card" id="card-4">
-          <div class="card-content">
-            <div>
-              <h2>Card Four</h2>
-              <p>This is the content of card four. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <figure>
-              <img src="https://assets.codepen.io/210284/flower-6.jpg" alt="card four">
-            </figure>
-          </div>
-        </li>
-      </ul>
-    </main>
+	<header>
+	  <div id="main_curtain">
+		<div id="main_header" class="typewriter">The Psychography of Christian Cheng</div>
+		<p class="spacing__1"></p>
+		<div class="main_image"><img src="https://drive.google.com/thumbnail?id=1TjuJlf5y_sIqDPuQKjFg8JkLe6ESCl8d" width="300em"></div>
+		<p class="spacing__1"></p>
+		<div class="main_image"><img src="https://drive.google.com/thumbnail?id=1fZw3xJx20bkiwQWiqXKYlggOHiZq-1ar" width="300em"></div>
+		<p class="spacing__1"></p>
+		<div class="main_image"><img src="media/three.jpg" width="300em"></div>
+		<p class="spacing__1"></p>
+		<div class="main_image"><img src="https://drive.google.com/thumbnail?id=1FgqUMQZTBzYNar5LzJlE51riUY6ZLFb4" width="300em"></div>
+	  </div>
+	</header>
+	<main class="container__stack">
+
+		<!-- Reveal stack container -->
+		<section class="stack__reveal">
+
+		<!-- Reveal cards -->
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Adler's Theory</h1>
+				<p class="subhead" style="color: #ee1111">ver. Only Child</p>
+				<p class="para">
+					I have a brother who is 16 years younger than me and two (recent) step-brothers who are five and ten years younger. As a result, my birth order is "only child".
+				</p>
+				<p class="para">
+					According to Adler, the only child typically faces no rivalry and becomes socially underdeveloped. As a result, they try to gain more attention through high standards, amiableness, assertiveness, or talkativeness.
+				</p>
+				<p class="para">
+					My birth order is quite accurate to my personality. Growing up through my teens, I've struggled socializing and felt driven to practice my social skills by attending events and parties, even taking a public speaking class in high school for that purpose. I am also quite assertive and perfectionistic, which may be due to having no sibling rivalry while feeling pressured to not disappoint as the only child.
+				</p>
+			</div>
+		</section>
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Freudian Theory</h1>
+				<p class="subhead"><span style="color: red">Id</span>, <span style="color: orange">Ego</span>, <span style="color: green">Superego</span></p>
+				<p class="para">
+					As I approached the regular decision (January) deadlines for my college applications, I was quickly heading toward the final stretch of days with not a word on a supplemental essay written. Being so exhausted from school yet needing to finish my essays, I faced a conflict between my id, ego, and superego.
+				</p>
+				<p class="para">
+					According to Freud, there are three aspects of my psyche that factored into my final decision. My id initially overcame me for the first week of winter break, spending every day with friends and spending the time alone escaping academic stress and watching YouTube and Netflix. Sometimes, I spent time with friends and left some time for college research, which was the compromise from my ego. 
+				</p>
+				<p class="para">
+					Within the last week of December barring holidays, my superego relinquished control, and I stopped making and attending plans. This left me plenty of time to work on college apps and reward myself afterward.
+				</p>
+			</div>
+		</section>
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Defense Mechanisms</h1>
+				<p class="subhead__2">ft. <span style="color: #ff8822">Rationalization</span>, <span style="color: #ff8822">Denial</span>, <span style="color: #ff88ff">Sublimination</span></p>
+				<p class="para">
+					Defense mechanisms occur when the human psyche becomes in conflict with itself.
+					<span style="color: #ff8822">Rationalization</span>: creating a false reason to explain an unpleasant event. Going back to the example above, I frequently faced conflict between my id and superego while working on my college apps. As I cut down the number of colleges I was applying to, I reasoned that I "wouldn't want to go to those schools anyway" and am better off refining fewer, higher quality essays. This defense mechanism took a lot of the weight of the task and allowed me to write with a more focused mind.
+				</p>
+				<p class="para">
+					<span style="color: #ff8822">Denial</span>: insisting that an unpleasant event didn't happen. <span style="color: #ff88ff">Sublimination</span>: channeling frustration/grief toward socially acceptable behavior. For the last ten months, I had been practicing a violin piece for Waubonsie's Senior Concerto Competition. Losing the competition earlier this January and being unable to perform for the concert, I took this as a crucial learning experience. For the first couple days after the results, I faced denial. I caught myself daydreaming and dreaming of myself checking the results and convincing myself that I passed. As the days flew by and the impact faded, I grew a clearer mind and took notes of the weak spots of the piece that fell under pressure. In this way, I felt productive when practicing and became confident in having another opportunity to improve in upcoming performances.
+				</p>
+			</div>
+		</section>
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Jung's Archetype Theory</h1>
+				<p class="subhead__2">Self vs. Persona</p>
+				<b class="para" style="color: purple">Self:</b>
+				<p class="para" style="background-color: seagreen">Innocent Child - 71.5% (Lively and Imaginative)</p>
+				<p class="para">Wise Old Man - 71.5% (Stoic and Contemplative)</p>
+				<p class="para">Joker - 70.5% (Light-Hearted and Sociable)</p>
+				<p class="para">Hero - 69.5% (Perseverant and Boundlessly Ambitious)</p>
+				<b class="para" style="color: green">Persona:</b>
+				<p class="para" style="background-color: seagreen">Hero - 72%</p>
+				<p class="para">Magician - 72%</p>
+				<p class="para">Joker - 72%</p>
+				<p class="para">Innocent Child - 70%</p>
+			</div>
+
+		</section>
+
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Myers Briggs Test</h1>
+				<p class="subhead__2"><span style="color: #ff3122">E</span><span style="color: #aa00ee">N</span><span style="color: #1122ff">T</span><span style="color: #ff6611">J</span>-<span style="color: #ff0000">A</span></p>
+				<p class="para">
+					<span style="color: #ff3122">Extraverted</span>, <span style="color: #aa00ee">Intuitive</span>, <span style="color: #1122ff">Thinking</span>, <span style="color: #ff6611">Judging</span> (<span style="color: #ff0000">Assertive</span>)
+				</p>
+				<p class="para">
+					People with this personality tend to be decisive, love momentum and accomplishment, and exhibit leadership, charisma, and confidence. At the same time, they tend to be over-rational, struggle with emotional expression, and have an intense drive that may come off as off-putting to others.
+				</p>
+				<p class="para">
+					I agree with most of the traits of my MBTI type, especially with regards to my work ethic. I tend  to set high standards for myself and am not always comfortable with not doing and achieving my best. However, I slightly disagree with “lack of emotional expression”, at least when it comes to working with other people. Although this may be more true when I am working by myself and I sometimes fail to conceptualize my own exhaustion, I make a conscious effort when working with others to account for everyone’s emotions and also express my own opinions/feelings — especially when working with music ensembles such as my string quartet group, where social coordination and working together are most important.
+				</p>
+				<p class="para">
+					For my career, I was suggested for <span style="background-color: yellow;">business management, law, counseling, engineering, and computer science</span>. Going into a major in applied mathematics, I strongly agree with engineering and computer science because I love incorporating analysis and logic when solving problems.
+				</p>
+			</div>
+		</section>
+
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>The Big Five Personality Test</h1>
+				<p class="subhead__2">
+					<span style="color: blue">Extraversion (65%)</span>, <span style="color: green">Emotional Stability (79%)</span>, <span style="color: springgreen;">Agreeableness (62%)</span>, <span style="color: #darkslateblue;">Conscientiousness (71%)</span>, <span style="color: purple">Intellect/Imagination (70%)</span>
+				</p>
+				<p class="para">
+					These percentages are quite accurate in describing my personality. For one, I am slightly more extraverted than introverted, where I love socializing and making connections but often need short periods of time spent by myself. My score for the emotional stability trait explains that I can interpret and express my emotions well — in contrast to what the Myers-Briggs test says. My agreeableness is noticeably lower but generally shows I try to be trustworthy and modest with others and avoid conflict when reasonably possible.
+				</p>
+			</div>
+		</section>
+
+		<section class="card__reveal overlay__reveal">
+			<div>
+				<h1>Enneagram Personality Test</h1>
+				<p class="subhead__2">
+					<span style="color: seagreen;">Type 9</span>: <span style="color: darkseagreen;">“Peacemaker”</span><br/>— <span style="color: springgreen;">Trusting (90%)</span> <i>(safe place for others)</i><br/>— <span style="color: darkslateblue;">Energetic (30%)</span> <i>(hard time starting projects)</i><br/>— <span style="color: purple">Conflict-Avoidant (65%)</span>
+				</p>
+				<p class="para">
+					People of this personality type are described to have a calm temperament when unstressed but are passive when stressed.
+				</p>
+				<p class="para">
+					I somewhat agree with these results. I am ambitious yet have a hard time getting started with large projects, ranging from learning longer songs to writing long essays. I also try to be a person that listens well to friends and family, who especially need someone to vent to. I slightly disagree with conflict-avoidant, though it is partly because it depends on the situation: I will confront people or conflicts when it is necessary or more practical. For example, when I am at the gym and need to use certain equipment or a basketball court, I feel comfortable walking up to the person using it and asking them if I could use it afterward (as opposed to waiting until they're done). I feel that I am more conflict-avoidant when it comes to family versus when it is with friends, acquaintances, or strangers.
+				</p>
+			</div>
+		</section>
+
+		</section>
+
+		<!-- Conceal stack container -->
+		<section class="stack__conceal">
+
+		<!-- Conceal cards -->
+		<section class="card__conceal overlay__conceal">Conceal 1</section>
+		<section class="card__conceal overlay__conceal">Conceal 2</section>
+		<section class="card__conceal overlay__conceal">Conceal 3</section>
+		<section class="card__conceal overlay__conceal">Conceal 4</section>
+
+		</section>
+
+	</main>
   </body>
 </html>
