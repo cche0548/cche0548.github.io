@@ -27,7 +27,11 @@ body {
 }
 
 .spacing__1 {
-  margin-bottom: 2vw;
+  margin-bottom: 4vh;
+}
+
+.spacing__2 {
+  margin-bottom: 20vh;
 }
 
 #main_header {
@@ -44,6 +48,13 @@ body {
   animation: oscillation 1.6s ease-in-out alternate infinite;
 }
 
+.main_video {
+  display: flex;
+  justify-content: center;
+  margin-left: 10em;
+  animation: oscillation 12.2s ease-in-out alternate infinite;
+}
+
 @keyframes oscillation {
   0% {
     transform: translateX(-1em);
@@ -58,10 +69,13 @@ body {
 h1 { font-size: 5vw; justify-content: center; text-align: center; }
 .subhead { font-size: 3vw; margin-top: 0.6vh; margin-bottom: 8vh; justify-content: center;
   text-align: center; }
-.subhead__2 { font-size: 2vw; margin-top: 0.6vh; margin-bottom: 8vh; justify-content: center;
+.subhead__2 { font-size: 2vw; margin-top: 0.6vh; margin-bottom: 2vh; justify-content: center;
   text-align: center; }
 
-.para { font-size: 1.3vw; margin-bottom: 0.8vh; justify-content: space-evenly; text-align: justify; margin-left: 1em; margin-right: 1em; text-indent: 2em; }
+.para { font-size: 1.1vw; margin-bottom: 0.8vh; justify-content: space-evenly; text-align: justify; margin-left: 1em; margin-right: 1em; text-indent: 2em; }
+
+.para_small { font-size: 1vw; margin-bottom: 0.8vh; justify-content: space-evenly; text-align: justify; margin-left: 1em; margin-right: 1em; text-indent: 2em; }
+
 .typewriter {
   color: #fff;
   display: block;
@@ -150,16 +164,18 @@ h1 { font-size: 5vw; justify-content: center; text-align: center; }
 }
 
 /* Stacking order: reveal */
-.card__reveal:nth-child(1) { z-index: 4; }
-.card__reveal:nth-child(2) { z-index: 3; }
-.card__reveal:nth-child(3) { z-index: 2; }
-.card__reveal:nth-child(4) { z-index: 1; }
+.card__reveal:nth-child(1) { z-index: 5; }
+.card__reveal:nth-child(2) { z-index: 4; }
+.card__reveal:nth-child(3) { z-index: 3; }
+.card__reveal:nth-child(4) { z-index: 2; }
+.card__reveal:nth-child(5) { z-index: 1; }
 
 /* Stacking order: conceal */
-.card__conceal:nth-child(1) { z-index: 5; }
-.card__conceal:nth-child(2) { z-index: 6; }
-.card__conceal:nth-child(3) { z-index: 7; }
-.card__conceal:nth-child(4) { z-index: 8; }
+.card__conceal:nth-child(1) { z-index: 6; }
+.card__conceal:nth-child(2) { z-index: 7; }
+.card__conceal:nth-child(3) { z-index: 8; }
+.card__conceal:nth-child(4) { z-index: 9; }
+.card__conceal:nth-child(5) { z-index: 10; }
 
 /* Overlay reveal & conceal effects
 ---------------------------------------- */
